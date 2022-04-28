@@ -136,11 +136,11 @@ button:active {
     font-size: 20px;
 }
 .animateIn {
-    animation: animateIn 0.6s;
+    animation: animateIn 1s;
 }
 
 .animateOut {
-    animation: animateOut 0.6s;
+    animation: animateOut 1s;
     display: none;
 }
 
