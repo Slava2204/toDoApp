@@ -231,4 +231,7 @@ button:active {
     input.form-control {
         margin-top: 5px;
     }
+    #clearForm {
+        margin-top: 20px;
+    }
 }
