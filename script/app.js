@@ -16,7 +16,7 @@ let score3 = 0;
 filterOption.addEventListener('change', filterTodo);
 todoList.addEventListener('click', updateResult);
 btnLogOut.addEventListener('click', function () {
-    document.location = '../ToDoProject/index.html';
+    document.location = 'index.html';
     localStorage.clear();
 })
 
