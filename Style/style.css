@@ -134,6 +134,7 @@ select {
     transition: all 0.5s ease;
 }
 select:hover {
+
     color: blue;
     transition: all 0.5s ease;
 }
@@ -221,7 +222,7 @@ div#score {padding-left: 35px}
 }
 
 .completedScore {
-    color: #b60303;
+    color: #c23232;
 }
 
 .deletedScore {
@@ -230,6 +231,126 @@ div#score {padding-left: 35px}
 
 #days h3 {
     padding-right: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        background: url(../images/phonebackground.jpg);
+    }
+    #application {
+        width: 80%;
+    }
+    header {
+        width: 90%;
+
+    }
+    h1 {
+        font-size: 50px;
+    }
+    #logOut {
+        width: 150px;
+        height: 90px;
+        font-size: 50px;
+    }
+    #score {
+        font-size: 40px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+    form input {
+        font-size: 40px;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .todo-button {
+        background-color: #4bab1c;
+        border: 2px solid #000000;
+        color: white;
+        font-weight: bold;
+        margin: 10px;
+        border-radius: 7px;
+        font-size: 10pt;
+        box-shadow: 0 0 6px black;
+        width: 180px;
+        height: 60px;
+
+    }
+    form button:hover {
+        box-shadow: 0 0 10px black;
+        color: black;
+        border-radius: 10px;
+        background-color: #214c84;
+    }
+    .todo-button:focus {
+        outline: none;
+    }
+    .todo-button i {
+        font-size: 35px;
+    }
+
+    .todo-button:active {
+        border-color: rgba(0, 0, 0, 0.64);
+        box-shadow: inset 0 1px 6px #000;
+        color: rgba(0, 0, 0, 0.64);
+    }
+    .select {
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+
+    }
+    .select select {
+        width: 270px;
+        height: 100%;
+
+    }
+    .select::after {
+        padding: 22px;
+    }
+    .filter-todo {
+        font-size: 20px;
+    }
+    #days h3 {
+        font-size: 40px;
+    }
+    .todo-container {
+        width: 600px;
+    }
+    .todo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 15px;
+        border: 4px solid black;
+    }
+    .todo-list {
+        min-width: 95%;
+    }
+    .todo li {
+        font-size: 30px;
+    }
+
+    .todo button {
+        background-color: #4c9310;
+        border: 2px solid #000000;
+        color: white;
+        font-weight: bold;
+        margin: 10px auto 10px auto;
+        border-radius: 7px;
+        font-size: 30pt;
+        box-shadow: 0 0 6px black;
+        width: 180px;
+        height: 60px;
+
+    }
+    .todo button.trash-btn {
+        background-color: #b60303;
+    }
 }
 
 
