@@ -39,10 +39,12 @@ btnReg.addEventListener('click', function (event) {
     newForm.removeAttribute('id');
     form.classList.add('animateIn');
     form2.classList.add('animateOut');
+    form.classList.remove('animationOut');
 });
 btnExit.addEventListener('click', function (event) {
     event.preventDefault();
     newForm.id = "vision";
+    form.classList.remove('animationIn');
     form2.classList.remove('animateOut');
     form2.classList.add('animateIn');
 })
