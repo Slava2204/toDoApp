@@ -129,7 +129,7 @@ const checkUser = (db) => {
             // Если курсор не нулевой, мы получили элемент.
             if (cursor.value.userName === userName.value.toLowerCase() && cursor.value.password === password.value) {
                 updateStatusUser(userName.value);
-                document.location = '../ToDoProject/toDo.html';
+                document.location = 'toDo.html';
                 res = "true";
             }
             cursor.continue();
