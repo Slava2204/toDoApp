@@ -238,7 +238,7 @@ function updateResult(e) {
                 if (item.classList[0] === "complete-btn") {
                     if (todo.className === 'todo uncompleted') {
                         updateData.status = 'completed';
-                        completeDay = mm + '/' + dd + '/' + yyyy;
+                        completeDay = dd + '/' + mm + '/' + yyyy;
                         updateData.completeToDo = completeDay;
                         todo.className = "todo completed";
                         note.innerText = updateData.todoInfo + "\n Created: " + updateData.createDate +
