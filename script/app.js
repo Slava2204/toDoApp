@@ -103,12 +103,10 @@ const submitNote = (event) => {
         addStickyNote(db, todoInput.value, 'uncompleted', user.textContent, today, deadline);
         todoInput.value = '';
 
-
     } else {
         if(Number(days.value) > 30)
         alert("не больше 30 дней на выполнение");
         event.preventDefault();
-
     }
 
 }
@@ -196,7 +194,7 @@ const displayNotes = (notes) => {
         }
         if (date2[1] === date[1]) {
             if (date2[0] - date[0] < 2) {
-                todoDiv.style.backgroundColor = "#b60303";
+                todoDiv.style.backgroundColor = "rgb(204 100 100)";
             } else if (date2[0] - date[0] < 5) {
                 todoDiv.style.backgroundColor = "#b26d0d";
             } else {
@@ -204,7 +202,7 @@ const displayNotes = (notes) => {
             }
         } else {
             if (date2[0] + 30 - date[0] < 2) {
-                todoDiv.style.backgroundColor = "#b60303";
+                todoDiv.style.backgroundColor = "rgb(204 100 100)";
             } else if (date2[0] + 30 - date[0] < 5) {
                 todoDiv.style.backgroundColor = "#b26d0d";
             } else {
