@@ -154,9 +154,81 @@ button:active {
     to {transform: scale(0)}
 }
 
-
-@media (max-width: 576px) {
+@media only screen and (max-device-width: 480px) {
+    .registration {
+        width: 400px;
+    }
     .registration form {
-        padding:50px 20px;
+        padding: 20px;
+    }
+    .text-center {
+        font-size: 50px;
+        margin: 10px;
+    }
+    .registration .item {
+        width: 85%;
+        height: 40px;
+        font-size: 30px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-group button {
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .checkUser {
+        font-size: 30px;
+    }
+    .newForm form {
+        width: 400px;
+    }
+    .newForm .cancel {
+        flex-direction: column;
+        font-size: 40px;
+        align-items: center;
+    }
+    .cancel h3 {
+        padding-top: 40px;
+        margin-top: 70px;
+    }
+    #exit {
+        margin: -200px auto 50px auto;
+        width: 130px;
+        height: 60px;
+        font-size: 30px;
+
+    }
+    .newForm input {
+        width: 85%;
+        height: 40px;
+        font-size: 30px;
+    }
+    .newForm input:first-child {
+        margin-top: 20px;
+    }
+
+    #regButtons {
+        margin: auto;
+        width: 200px;
+
+    }
+    #regButtons button {
+        width: 200px;
+        height: 55px;
+        font-size: 30px;
+    }
+    #regLogin {
+        margin-top: 40px;
+    }
+    .checkUser {
+        font-size: 30px;
+    }
+    input.form-control {
+        margin-top: 5px;
     }
 }
