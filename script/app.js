@@ -105,7 +105,7 @@ const submitNote = (event) => {
 
 
     } else {
-        if(Number(days.value) > 31)
+        if(Number(days.value) > 30)
         alert("не больше 30 дней на выполнение");
         event.preventDefault();
 
