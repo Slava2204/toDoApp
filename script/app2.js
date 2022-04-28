@@ -40,6 +40,7 @@ btnReg.addEventListener('click', function (event) {
     form.classList.add('animateIn');
     form2.classList.add('animateOut');
     form.classList.remove('animationOut');
+    form2.classList.remove('animationIn');
 });
 btnExit.addEventListener('click', function (event) {
     event.preventDefault();
@@ -47,6 +48,7 @@ btnExit.addEventListener('click', function (event) {
     form.classList.remove('animationIn');
     form2.classList.remove('animateOut');
     form2.classList.add('animateIn');
+    form.classList.add('animateOut');
 })
 
 
