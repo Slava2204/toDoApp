@@ -134,8 +134,7 @@ select {
     transition: all 0.5s ease;
 }
 select:hover {
-    background-color: #e1d19c;
-    color: white;
+    color: blue;
     transition: all 0.5s ease;
 }
 
