@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Style/styleIndex.css">
+
+</head>
+<body>
+<div class="registration">
+    <form>
+        <h3 class="text-center">Authorization</h3>
+        <div class="form-group">
+            <input class="form-control item" type="text" name="username" maxlength="15" id="username" placeholder="Login" required>
+        </div>
+        <div class="checkUser">Incorrect login or password</div>
+        <div class="form-group">
+            <input class="form-control item" type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+            <button class="enter" type="submit" id="123">Enter</button>
+            <button class="reg">Registration</button>
+        </div>
+    </form>
+</div>
+
+<div class="newForm" id="vision">
+    <form>
+        <div class="cancel">
+            <h3>Create new account</h3>
+            <button id="exit">&#10006</button>
+        </div>
+
+        <div id="regLogin" class="form-group">
+            <input type="text" class="form-control item" placeholder="Enter login" required>
+        </div>
+        <div class="checkUser">This name is already taken</div>
+        <div id="regPassword" class="form-group">
+            <input type="password" class="form-control item" placeholder="Password" required>
+        </div>
+        <div>
+            <button id="createAccount" type="submit">OK</button>
+            <button id="clearForm">Clear</button>
+        </div>
+    </form>
+</div>
+
+<script src="script/app2.js"></script>
+</body>
+</html>

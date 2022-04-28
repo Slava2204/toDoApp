@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url("../images/backauto.jpg");
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    min-height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+header {
+    font-size: 15px;
+    width: 475px;
+    margin: auto;
+    justify-content: space-between;
+}
+header, form {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+}
+form input, form button {
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: coral;
+    background: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    min-height:33px;
+    min-width: 33px;
+}
+form button:hover {
+    background: coral;
+    color: white;
+    border-radius: 50%;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 15px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-image:url("../images/login.jpg");
+    box-shadow: 7px 7px 2px black;
+    width: 400px;
+
+}
+.todo-list {
+    min-width: 90%;
+    list-style: none;
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+.trash-btn, .complete-btn {
+    background: #ff5050;
+    color: white;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+.complete-btn {
+    background: #9cc956;
+}
+.complete-btn:hover {
+    background: #1f6924;
+}
+.trash-btn:hover {
+    background: darkred;
+}
+
+.complete-btn::after {
+    content:'\2714';
+}
+
+.trash-btn::after {
+    content:'\2718';
+}
+
+.trash, .check {
+    pointer-events: none;
+}
+
+.completed {
+    opacity: 0.6;
+    background-color: grey;
+}
+.completed li:hover {
+    color: white;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+    color:coral;
+    width: 130px;
+    cursor: pointer;
+    padding: 9px;
+    transition: all 0.5s ease;
+}
+select:hover {
+    background-color: #e1d19c;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.select {
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: coral;
+    top: 0;
+    right: 0;
+    padding: 9px;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.select:hover::after {
+    background: black;
+    color: cornflowerblue;
+    transform: rotateZ(360deg);
+}
+
+#logOut {
+    border: 2px solid #000000;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 10pt;
+    box-shadow: 0 0 6px black;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(208, 53, 53, 0.83);
+}
+
+#logOut:hover {
+    box-shadow: 0 0 10px black;
+    color: black;
+}
+#logOut:focus {
+    outline: none;
+}
+
+#logOut:active {
+    border-color: rgba(0, 0, 0, 0.64);
+    box-shadow: inset 0 1px 6px #000;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+form {
+    margin: auto auto 20px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-image:url("../images/login.jpg");
+    box-shadow: 7px 7px 2px black;
+    width: 475px;
+
+}
+
+#application {
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(125deg, rgba(2,0,36,1) 0%, rgba(34,34,156,1) 35%, rgba(0,212,255,1) 100%);
+    box-shadow: 7px 7px 2px black;
+    width: 550px;
+
+}
+div.todo:hover {
+    background-color: #8c6391;
+    color: white;
+}
+div#score {padding-left: 35px}
+
+.noCompleteScore {
+    color: greenyellow;
+}
+
+.completedScore {
+    color: #b60303;
+}
+
+.deletedScore {
+    color: darkviolet;
+}
+
+#days h3 {
+    padding-right: 10px;
+}
+
+

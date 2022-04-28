@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Style/style.css"/>
+</head>
+<body>
+<div id="application">
+    <header>
+        <div>
+            <h1>User name:</h1>
+            <h1 id="user"></h1>
+        </div>
+        <button id="logOut">&#10006</button>
+    </header>
+    <div id="score">
+        <h4 class="noCompleteScore"></h4>
+        <h4 class="completedScore"></h4>
+        <h4 class="deletedScore"></h4>
+    </div>
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit" onclick="submitNote()">
+            <i>+</i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <form id="days">
+        <h3>Days to complete:</h3>
+        <input type="number" min="1" max="30" value="1">
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+</div>
+<script src="script/app.js"></script>
+</body>
+</html>
