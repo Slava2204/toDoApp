@@ -1,6 +1,6 @@
-let btnEnter = document.body.querySelector('.enter');
-let btnReg = document.body.querySelector('.reg');
-let btnExit = document.body.querySelector('#exit');
+const btnEnter = document.body.querySelector('.enter');
+const btnReg = document.body.querySelector('.reg');
+const btnExit = document.body.querySelector('#exit');
 let newForm = document.body.querySelector('.newForm');
 let form = document.body.querySelector('.newForm form');
 let form2 = document.body.querySelector('.registration form');
@@ -49,8 +49,8 @@ btnExit.addEventListener('click', function (event) {
 
 
 
-let btnCreate = document.body.querySelector('#createAccount');
-let btnClear = document.body.querySelector('#clearForm');
+const btnCreate = document.body.querySelector('#createAccount');
+const btnClear = document.body.querySelector('#clearForm');
 
 btnCreate.addEventListener('click', function (event) {
     if (inputLogin.value !== "" && inputPassword.value !== "") {
