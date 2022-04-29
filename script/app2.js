@@ -55,7 +55,7 @@ const btnCreate = document.body.querySelector('#createAccount');
 const btnClear = document.body.querySelector('#clearForm');
 
 btnCreate.addEventListener('click', function (event) {
-    if (inputLogin.value !== "" && inputPassword.value !== "") {
+    if (inputLogin.value.length > 3 && inputPassword.value.length > 3) {
         event.preventDefault();
         checkCorrect(db);
 
